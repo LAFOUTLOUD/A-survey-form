@@ -1,36 +1,47 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 	<html>
 
 		<head>
-			<link href="style.css" rel="stylesheet">
+			<link href="css/style.css" rel="stylesheet">
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<title>Survey Form</title>
+			<title></title>
 		</head>
 
-		<body id="">
-			<div>
-			<h1>Survey Form</h1>
-			<p>Let us know how we can improve freeCodeCamp</p>
+		<body>
 
-			<ul>
-				<li>Name:</li>
-				<li>Email:</li>
-				<li>Age:</li>
-			</ul>
+			<h1 id="title">Title</h1>
+			<p id="description">Description</p>
 
-			<p>Which option best describes your current role?</p>
+			<form action="" id="survey-form" method="get">
 
-			<ul>
-				<li>How likely is that you would recommend freeCodeCamp to a friend?</li>
-			</ul>
+				<!-- We create a dropdown menu for the input field for a 'Name' -->
+				<div id="dropdown">
 
-			<p>What do you like most in FCC:</p>
+					<span>
+					<!-- enter your name -->
+					<label for="name-label">Name</label>
+					<input id="name" id="name-label" placeholder="name" type="text">
 
-			<p>Things that should be improved in the future<br>(Check all that apply):</p>
-			<p>
+					<!-- enter your email -->
+					<label for="email-label">Email</label>
+					<input id="email" id="email-label" placeholder="email" type="email">
 
-			<script src=".js"></script>
-			</div>
+					<!-- enter a number -->
+					<label for="number-label">Number</label>
+					<input id="number" id="number-label" min="1" max="10" placeholder="number" type="number">
+
+					<label for="field">Field</label>
+					<input id="field1" name="field" placeholder="field" type="radio">
+					<input id="field2" name="field" placeholder="field" type="radio">
+					<input id="field3" name="field" placeholder="field" type="radio">
+
+				</div>
+
+			</form>
+
+			<!-- js script -->
+			<script src="js/script.js"></script>
 		</body>
+
 	</html>
